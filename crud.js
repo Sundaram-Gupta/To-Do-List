@@ -23,8 +23,6 @@ function addTask(){
         span.innerHTML = "\u00d7";
         console.log(tasks);
         li.appendChild(span);
-          
-        saveTask();
     }
     else{
         alert("You must write something!")
@@ -41,6 +39,7 @@ tasks.addEventListener("click",function(e){
     else if(e.target.tagName == "SPAN"){
         e.target.parentElement.remove();
     }
+    saveTask();
 })
 
 
